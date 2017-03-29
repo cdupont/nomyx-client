@@ -27,10 +27,10 @@ optionsParser = Options
      <$> switch              ( long "verbose"                                           <> help "Verbose ouput")
      <*> switch              ( long "version"                                           <> help "Show version number")
      <*> switch              ( long "test"                                              <> help "Perform routine tests")
-     <*> strOption           ( long "hostname" <> value "localhost" <> metavar "TARGET" <> help "Hostname of the Nomyx server (default is localhost)")
-     <*> (read <$> strOption ( long "port"     <> value "8001"      <> metavar "TARGET" <> help "port of the Nomyx server (default is 8000)"))
-     <*> strOption           ( long "login"    <> value "admin"     <> metavar "TARGET" <> help "Login")
-     <*> strOption           ( long "password" <> value "admin"     <> metavar "TARGET" <> help "Password")
+     <*> strOption           ( long "hostname" <> value "www.nomyx.net" <> metavar "TARGET" <> help "Hostname of the Nomyx server (default is localhost)")
+     <*> (read <$> strOption ( long "port"     <> value "8001"          <> metavar "TARGET" <> help "port of the Nomyx server (default is 8000)"))
+     <*> strOption           ( long "login"                             <> metavar "TARGET" <> help "Login")
+     <*> strOption           ( long "password"                          <> metavar "TARGET" <> help "Password")
 
 commandParser :: Parser Command
 commandParser = subparser

@@ -34,8 +34,10 @@ Clone (nomyx-library)[https://github.com/cdupont/nomyx-library] to get a set of 
 To push the rules to Nomyx, use:
 
 ```
-
+$ cd nomyx-library
+$ nomyx-client templates put src/templates.yaml --login <your login> --password <your password>
 ```
+"<your login>" and "<your password>" corresponds to your credentials in the game.
 
 
 Contact

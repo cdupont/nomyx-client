@@ -34,7 +34,10 @@ uploadLibrary yamlFile (Options _ _ _ host port login password) = do
   l <- readLibrary yamlFile
   manager <- newManager defaultManagerSettings
   let auth = BasicAuthData (pack login) (pack password)
-  runExceptT (putLibrary auth l manager (BaseUrl Http host port ""))
+  res <- runExceptT (putLibrary auth l manager (BaseUrl Http host port ""))
+  case res of
+    Right _ -> putStrLn "Templates uploaded"
+    Left e -> putStrLn (show e)
   return ()
 
 downloadLibrary :: FilePath -> Options -> IO ()
