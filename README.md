@@ -30,7 +30,7 @@ stack install
 Usage
 -----
 
-Clone (nomyx-library)[https://github.com/cdupont/nomyx-library] to get a set of rules.
+Clone [nomyx-library](https://github.com/cdupont/nomyx-library) to get a set of rules.
 To push the rules to Nomyx, use:
 
 ```
