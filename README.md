@@ -37,7 +37,7 @@ To push the rules to Nomyx, use:
 $ cd nomyx-library
 $ nomyx-client templates put src/templates.yaml --login <your login> --password <your password>
 ```
-"<your login>" and "<your password>" corresponds to your credentials in the game.
+`<your login>` and `<your password>` corresponds to your credentials in the game.
 
 
 Contact
