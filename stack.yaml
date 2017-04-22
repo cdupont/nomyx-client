@@ -4,6 +4,7 @@ packages:
 extra-deps:
 - nomyx-language-1.0.0
 - nomyx-core-1.0.0
+- nomyx-library-1.0.0
 - nomyx-api-0.1.0
 - imprevu-0.1.0
 - shortcut-0.1
